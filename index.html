@@ -249,6 +249,11 @@
             <i class="fab fa-linkedin text-cyan-400 text-lg group-hover:scale-110 transition-transform"></i>
             <span>LinkedIn Profile</span>
           </a>
+               <a href="resume.pdf" download="Charan_Gowda_Software_Engineer_Resume.pdf" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm transition-all duration-200 shadow-lg shadow-emerald-600/25 flex items-center gap-2">
+                  <i class="fas fa-file-download text-xs"></i>
+                <span>Download Resume</span>
+                  </a>
+
           <button onclick="copyEmail()" class="px-4 py-3.5 rounded-xl glass-panel text-slate-300 hover:text-white hover:border-purple-400/50 transition-all flex items-center gap-2" title="Copy Email Address">
             <i class="fas fa-copy text-purple-400"></i>
             <span class="text-xs font-mono">charangowda845@gmail.com</span>
@@ -430,58 +435,109 @@
     </section>
 
     <!-- PROJECT HIGHLIGHTS SECTION -->
-    <section id="projects" class="space-y-8">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div>
-          <div class="inline-block px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-mono uppercase tracking-wider mb-2">
-            Selected Works
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Key Portfolio Highlights</h2>
-        </div>
-        <p class="text-slate-400 text-sm max-w-md">
-          Featured projects demonstrating cross-platform mobile app mastery, AI pipelines, and global multi-region deployments.
-        </p>
-      </div>
+    <section id="projects" class="relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Portfolio Showcase</h2>
+                <p class="text-3xl font-extrabold text-white">Key Technical Highlights</p>
+            </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- Project 1: JiffyBook -->
-        <div class="glass-panel p-6 sm:p-8 rounded-3xl relative overflow-hidden group border border-white/10 hover:border-cyan-500/40 transition-all">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-            <span class="px-3 py-1 rounded-full text-xs font-mono bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Production Mobile App</span>
-            <span class="text-xs text-slate-400 font-mono">iOS & Android Stores</span>
-          </div>
-          <h3 class="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">JiffyBook Ecosystem</h3>
-          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
-            Full lifecycle design and production deployment of <em>JiffyBook</em> cross-platform application. Built using React Native with native bridge optimization, real-time database syncing, and global localization.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-6">
-            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-white/5 text-slate-300">React Native</span>
-            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-white/5 text-slate-300">Firebase</span>
-            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-white/5 text-slate-300">TypeScript</span>
-            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-white/5 text-slate-300">i18n Multi-lang</span>
-          </div>
-        </div>
+            <div class="space-y-12">
 
-        <!-- Project 2: Vertex AI Studio -->
-        <div class="glass-panel p-6 sm:p-8 rounded-3xl relative overflow-hidden group border border-white/10 hover:border-purple-500/40 transition-all">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-            <span class="px-3 py-1 rounded-full text-xs font-mono bg-purple-500/10 text-purple-400 border border-purple-500/20">Generative AI Platform</span>
-            <span class="text-xs text-slate-400 font-mono">Vertex AI & Imagen API</span>
-          </div>
-          <h3 class="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">AI Dynamic Prompting Engine</h3>
-          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
-            Architected dynamic generative prompt selection interfaces powered by GCP Vertex AI and Imagen API. Allows users to synthesize high-fidelity image output with custom visual parameter controls.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-6">
-            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-white/5 text-slate-300">Google Cloud</span>
-            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-white/5 text-slate-300">Vertex AI</span>
-            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-white/5 text-slate-300">Imagen API</span>
-            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-white/5 text-slate-300">Next.js</span>
-          </div>
-        </div>
+                <!-- FEATURED PROJECT 1: JiffyBook Ecosystem -->
+                <div class="glass-card rounded-3xl p-8 md:p-10 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 relative overflow-hidden group">
+                    <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-600/20 transition-all"></div>
 
-      </div>
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="px-3.5 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold uppercase tracking-wider border border-blue-500/20">
+                                Flagship Production Mobile App
+                            </span>
+                            <span class="px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider border border-emerald-500/20 flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> iOS & Android Live
+                            </span>
+                        </div>
+                        <span class="text-xs text-slate-400 font-mono">React Native & GCP</span>
+                    </div>
+
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
+                        JiffyBook Ecosystem — AI Luxury Customization Marketplace
+                    </h3>
+
+                    <p class="text-slate-300 text-base leading-relaxed mb-6">
+                        <strong>JiffyBook</strong> is a production-grade cross-platform mobile marketplace connecting luxury shoppers directly with premium brands and artisans. Built from the ground up using <strong>React Native</strong> and <strong>Firebase</strong>, the application empowers users to design bespoke physical luxury items through generative AI prompts and dynamic 3D visual renders.
+                    </p>
+
+                    <!-- Key Technical Features Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 pt-4 border-t border-slate-800/80">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-blue-400 font-semibold text-sm">
+                                <i class="fas fa-wand-magic-sparkles text-xs"></i>
+                                <span>AI Prompt-to-Product</span>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Integrated GCP Vertex AI & Imagen API to convert multi-modal text prompts into ultra-realistic 3D product renders ready for manufacturing.
+                            </p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-emerald-400 font-semibold text-sm">
+                                <i class="fas fa-coins text-xs"></i>
+                                <span>Goldies Loyalty Engine</span>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Architected customer rewards system enabling verified feedback loops and store-specific balances for custom order redemptions.
+                            </p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-indigo-400 font-semibold text-sm">
+                                <i class="fas fa-language text-xs"></i>
+                                <span>Global Multi-Region i18n</span>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Complete localization support across 4 international regions (French, Estonian, Slovak, and Arabic with full RTL support).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Badges -->
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">React Native</span>
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">TypeScript</span>
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">Firebase Firestore</span>
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">GCP Vertex AI & Imagen</span>
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">i18n Multi-lang</span>
+                    </div>
+                </div>
+
+                <!-- FEATURED PROJECT 2: AI Dynamic Prompting Engine -->
+                <div class="glass-card rounded-3xl p-8 md:p-10 border border-slate-800 hover:border-purple-500/50 transition-all duration-300 relative overflow-hidden group">
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+                        <span class="px-3.5 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold uppercase tracking-wider border border-purple-500/20">
+                            Generative AI Integration
+                        </span>
+                        <span class="text-xs text-slate-400 font-mono">Next.js & Imagen API</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors">
+                        AI Dynamic Prompting & Visual Synthesis Engine
+                    </h3>
+
+                    <p class="text-slate-300 text-base leading-relaxed mb-6">
+                        Designed and deployed serverless prompt processing workflows leveraging Next.js API routes and Google Cloud Vertex AI. Engineered image synthesis pipelines utilizing Google's Imagen API to produce luxury textures, material rendering, and real-time visualization tweaks for custom design orders.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">Next.js</span>
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">Vertex AI</span>
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">Imagen API</span>
+                        <span class="px-3 py-1 bg-slate-800/80 text-slate-300 rounded-lg text-xs font-medium border border-slate-700/60">Serverless Functions</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- WORK EXPERIENCE SECTION -->
@@ -549,7 +605,7 @@
     </section>
 
     <!-- FOOTER / CONTACT SECTION -->
-    <section id="contact" class="text-center space-y-6 pt-10">
+    <section id="contact" class="text-center space-y-6 ">
       <div class="glass-panel p-8 sm:p-12 rounded-3xl max-w-3xl mx-auto space-y-6 relative overflow-hidden border border-white/10">
         <div class="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono uppercase">
           Let's Collaborate
